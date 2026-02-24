@@ -1,0 +1,15 @@
+{
+    "title": "Referendum on the Central and Western Syria Region",
+    "question": "Do you agree to authorize the political body of the Central and Western Syria Region, represented by Dr. Hassan Marhaj, to represent you and defend your rights inside and outside Syria according to its declared principles:",
+    "principles": [
+        "Expanded political decentralization / federalism",
+        "Freedom of detainees",
+        "Establishment of a fund to support the region",
+        "Employee rights",
+        "Social justice"
+    ],
+    "yes": "Yes",
+    "no": "No",
+    "results": "Live Results",
+    "total": "Total Votes"
+}
