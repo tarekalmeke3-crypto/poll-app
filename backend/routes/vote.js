@@ -3,11 +3,12 @@ const router = express.Router();
 const Vote = require('../models/Vote');
 const rateLimit = require('express-rate-limit');
 
-//const limiter = rateLimit({
-    //windowMs: 15 * 60 * 1000,
-    //max: 5,
-    //message: { message: 'طلبات كثيرة جداً، الرجاء المحاولة لاحقاً' }
-//});
+// تعريف limiter
+const limiter = rateLimit({
+    windowMs: 60 * 1000,  // دقيقة واحدة
+    max: 10,  // 10 محاولات كحد أقصى
+    message: { message: 'طلبات كثيرة جداً، الرجاء المحاولة لاحقاً' }
+});
 
 router.get('/results', async (req, res) => {
     try {
